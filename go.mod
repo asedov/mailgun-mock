@@ -2,4 +2,7 @@ module mailgun-mock
 
 go 1.12
 
-require github.com/julienschmidt/httprouter v1.2.0 // indirect
+require (
+	github.com/gorilla/mux v1.7.2 // indirect
+	github.com/gorilla/websocket v1.4.0 // indirect
+)

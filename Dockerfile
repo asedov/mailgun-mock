@@ -14,4 +14,4 @@ RUN apk add --no-cache git \
 FROM scratch
 COPY --from=builder /app/mailgun-mock .
 COPY public /public
-CMD ["/mailgun-mock"]
+ENTRYPOINT ["/mailgun-mock"]
